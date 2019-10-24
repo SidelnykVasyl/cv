@@ -1,0 +1,152 @@
+doctype html 
+html 
+  head
+    title Title
+    link(rel="stylesheet", href="/css/cv2.css")
+    //- link(rel='stylesheet' href='https://cvtemplatescss.s3.eu-central-1.amazonaws.com/cv2.css')
+    body
+  .page
+    .header
+      .header__basic_info
+        h2 #{data.first_name} 
+        h2 #{data.last_name}
+        h2 #{data.position}
+    .header__email
+        h3 #{data.email}
+    .header__birthday
+      .header__birthday_date
+        p Date of birth
+      .header__birthday_value
+        p #{data.dob}
+    .links
+      .links__title 
+        h2 LINKS
+      .links__descriptions
+        a(href=data.links[1].link) #{data.links[1].label}, 
+        a(href=data.links[0].link) #{data.links[0].label} 
+    .employment__section
+      .employment__section_title
+          h2 #{data.sections[0].toUpperCase()}
+      .employment__description
+          .employment__date
+            p #{data.works[0].start_date} - #{data.works[0].end_date}
+          .employment__position
+            p #{data.works[0].title}
+            span #{data.works[0].employer}
+            p !{data.works[0].description}
+          .employment__city
+            span #{data.works[0].city}
+      .employment__description
+          .employment__date
+            p #{data.works[1].start_date} - #{data.works[1].end_date}
+          .employment__position
+            span #{data.works[1].employer}
+            p !{data.works[1].description}
+          .employment__city
+            span #{data.works[1].city}  
+      .employment__description
+          .employment__date
+            p #{data.works[2].start_date} - #{data.works[2].end_date}
+          .employment__position
+            span #{data.works[2].employer}
+            p !{data.works[2].description}
+          .employment__city
+            span #{data.works[2].city}  
+      .employment__description
+          .employment__date
+            p #{data.works[3].start_date} - #{data.works[3].end_date}
+          .employment__position
+            span #{data.works[3].employer}
+            p !{data.works[3].description}
+          .employment__city
+            span #{data.works[3].city}  
+    .education__section
+      .education__title
+        h2 #{data.sections[3].toUpperCase()}
+      .education__description
+        .education__description_date
+          p #{data.educations[0].start_date} - #{data.educations[0].end_date}
+        .education__description_info
+          h3 #{data.educations[0].degree + ' ' + data.educations[0].school}
+          p !{data.educations[0].description}
+        .education__description_city
+          span #{data.educations[0].city}
+    .skills__section
+      .skills__section_title
+        h2 #{data.sections[4].toUpperCase()}  
+      .skills__leftSide
+        p #{data.skills[0].label}                     
+        p #{data.skills[1].label}                     
+        p #{data.skills[2].label}                     
+        p #{data.skills[3].label}                     
+        p #{data.skills[0].label}                     
+        p #{data.skills[1].label}                     
+      .skills__rightSide
+        p #{data.skills[2].label}                     
+        p #{data.skills[3].label}                     
+        p #{data.skills[0].label}                     
+        p #{data.skills[1].label}                     
+        p #{data.skills[2].label}                     
+        p #{data.skills[3].label}                     
+    .projects__section
+      .projects__section_title
+        h2 #{data.sections[1].toUpperCase()}
+      .projects__description
+        .projects__description_date
+          p #{data.projects[0].start_date + ' - ' + data.projects[0].end_date}
+        .projects__description_position
+          h3 #{data.projects[0].title}
+          p !{data.projects[0].description}
+        .projects__city
+            span #{data.projects[0].organization} 
+      .projects__description
+        .projects__description_date
+          p #{data.projects[1].start_date + ' - ' + data.projects[1].end_date}
+        .projects__description_position
+          h3 #{data.projects[1].title}
+          p !{data.projects[1].description}
+        .projects__city
+            span #{data.projects[1].organization}      
+    .references__section
+      .references__title
+        h2 #{data.sections[6].toUpperCase()}
+      .descriptions__wrapper
+        .references__description
+          h3 #{data.references[0].name}
+          p #{data.references[0].company}
+          p #{data.references[0].email} &#183; #{data.references[0].phone}
+    .courses__section
+      .couses__title 
+        h2 #{data.sections[7].toUpperCase()}
+      .courses__description_wrapper
+        .courses__description
+          p #{data.courses[0].course}
+          p #{data.courses[0].association}
+        .courses__description
+          p #{data.courses[1].course}
+          p #{data.courses[1].association}
+        .courses__description
+          p #{data.courses[2].course}
+          p #{data.courses[2].association}
+    .hobbies__section
+      .hobbies__title
+        h2 HOBBIES
+      .hobbies__description
+        p #{data.hobbies}     
+    .honors__section
+      .honors__title
+        h2 #{data.sections[5].toUpperCase()}
+      .honors__description
+        h4 #{data.honors[0].title}
+        p #{data.honors[0].issuer}      
+        p !{data.honors[0].description}
+    .languages__section
+        .languages__section_title
+            h2 #{data.sections[2].toUpperCase()}
+        .languages__items
+         .languages__items_left
+            p #{data.languages[0].label}
+         .languages__items_right
+            p #{data.languages[1].label}
+
+

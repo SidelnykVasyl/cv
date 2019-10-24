@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+h3 {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+
+.blueColor{
+  color: dodgerblue;
+}
+
+.greyColor {
+  color: grey;
+}
+
+.page {
+  width: 21cm;
+  padding: 0 1cm 0.3cm;
+  background: white;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+.header {
+  margin: 20px 30px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__basic_info {
+  display: flex;
+}
+
+.header__basic_info h2 {
+  margin-right: 10px;
+}
+
+
+.header__first_name{
+  font-weight: bold;
+}
+
+.header__img img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.header__vocation h3{
+  color: deepskyblue;
+}
+
+table {
+  width: 100%;
+}
+
+.header__contacts_info {
+  display: flex;
+  margin-top: 30px;
+  line-height: 2em;
+  position: relative;
+}
+
+.header__contacts_info::after{
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: -25px;
+}
+
+.header__contacts_info p {
+  font-size: 10px;
+  color: dodgerblue;
+}
+
+.firstSection.value p{
+  color: black;
+}
+
+
+
+.leftSide{
+  width: 40%;
+  display: flex;
+  margin-right: 20px;
+}
+.rightSide{
+  width: 40%;
+  display: flex;
+}
+
+.rightSide p {
+  width: 100px;
+}
+
+.firstSection {
+  margin-right: 60px;
+
+}
+
+
+.employment{
+  margin: 0px 30px;
+}
+
+.employment h2 {
+  margin: 55px 0px 20px 0px
+}
+
+.employment__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.employment__position_item p{
+  font-size: 10px;
+}
+
+.employment__position_item p:first-child{
+  font-size: 20px;
+}
+
+.employment__date {
+  width: 25%;
+  margin-bottom: 10px;
+}
+.employment__date_item p {
+  margin-bottom: 10px;
+}
+.employment__position {
+  width: 60%;
+}
+
+.employment__position_item {
+  line-height: 2em;
+}
+
+.education {
+  padding: 25px 0px 0px 0px;
+  position: relative;
+  margin: 0px 30px;
+
+}
+
+
+/* .education::after{
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+} */
+
+.education__date p{
+  margin-bottom: 10px;
+}
+
+
+.education__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.education__title {
+  width: 25%;
+  margin-bottom: 30px;
+}
+
+.education__position {
+  width: 60%;
+}
+
+.education__position p {
+  margin: 10px 0px;
+}
+
+.skills {
+  margin: 25px 30px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 20px;;
+}
+
+.skills::after {
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.skills__title {
+  width: 25%;
+}
+
+
+.skills__description {
+  font-size: 12px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2em;
+}
+
+.skills__left_side {
+  width: 46%;
+}
+
+.skills__right_side {
+  width: 46%;
+}
+
+.projects {
+  position: relative;
+  padding: 20px 0px;
+  margin: 0px 30px;
+
+}
+
+.projects::after {
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.projects::before{
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  top: 0;
+} 
+
+
+.projects__date {
+  width: 25%;
+}
+
+.projects__date p {
+  margin-bottom: 10px;
+}
+
+.projects__position {
+  width: 60%;
+  line-height: 1.5em;
+}
+
+.projects__position p {
+  margin: 30px 0px;
+  font-size: 12px;
+}
+
+.projects__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__title {
+  margin: 30px 0px;
+}
+
+.languages {
+  padding: 30px 0px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 30px;
+
+}
+
+.languages__items {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.languages__items_left {
+  width: 45%;
+}
+
+.languages__items_right {
+  width: 50%;
+}
+
+
+.languages::after {
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.open__source {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.open__source_title {
+  margin: 30px 0px;
+}
+
+.open__source_description {
+  margin-left: 40%;
+}
+
+.open__source_description p {
+  line-height: 2em;
+  font-size: 14px;
+}
+
+.open__source_description h3 {
+  margin-bottom: 20px;
+}
+
+.open__source::after {
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+.references {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+  padding: 30px 0px;
+  margin: 0px 30px;
+
+}
+
+.references__title {
+  width: 25%;
+}
+
+.references__description {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  line-height: 2em;
+  font-size: 14px;
+}
+
+
+
+.references::after {
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.courses {
+  position: relative;
+  padding-bottom: 25px;
+  margin: 0px 30px;
+
+}
+
+.courses__title {
+  margin: 20px 0px;
+}
+
+
+.courses__description {
+  margin: 0px 0px 30px 40%;
+  font-size: 14px;
+}
+
+.courses__description p.greyColor {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.courses::after {
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.hobbies {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+  padding-bottom: 25px;
+}
+
+.hobbies__title {
+  width: 25%;
+}
+
+.hobbies__description {
+  width: 60%;
+  font-size: 12px;
+}
+
+.hobbies::after {
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.honors {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+  position: relative;
+}
+
+.honors__description {
+  width: 60%;
+}
+
+.honors__description h4 {
+  margin-bottom: 20px;
+}
+
+.honors__description p {
+  line-height: 2em;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.honors::after {
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.languages__item {
+  width: 60%;
+}
+
+.languages__item p {
+  margin-bottom: 10px;
+}

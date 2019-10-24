@@ -1,0 +1,440 @@
+
+@font-face {
+  src: url(./../fonts/TTCommons-Regular.ttf);
+  font-family: myFont;
+}
+
+
+/* @font-face { 
+  src: url(/fonts/TTCommons-Regular.ttf);
+  font-family: myFont;
+}  */
+
+
+/* @font-face {
+  font-family: "Bitstream Vera Serif Bold";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+} */
+
+/* body { font-family: "Bitstream Vera Serif Bold", serif } */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFont
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  margin-bottom: 30px;
+}
+p {
+  font-size: 14px;
+}
+
+.blueColor{
+  color: dodgerblue;
+}
+
+.greyColor {
+  color: grey;
+}
+
+.page {
+  width: 21cm;
+  padding: 0 1cm 0.3cm;
+  background: white;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+.header {
+  display: flex;
+  margin: 30px 30px 0px 30px;
+}
+
+.header__basic_info {
+  display: flex;
+  margin: 0 auto;
+}
+
+.header__basic_info h2 {
+  margin-right: 5px;
+}
+
+.header__email {
+  margin: 20px 30px 0px 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.header__email::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.header__birthday {
+  display: flex;
+  padding: 25px 0px;
+  position: relative;
+  margin: 0px 30px;
+}
+
+.header__birthday::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.header__birthday_date {
+  width: 50%;
+}
+
+.header__birthday_value {
+  width: 60%;
+}
+
+.links {
+  display: flex;
+  padding: 25px 0px;
+  position: relative;
+  margin: 0px 30px;
+}
+
+.links::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.links__title {
+  width: 30%;
+}
+
+.links__descriptions a{
+  color: black;
+  margin-right: 5px;
+}
+
+.employment__section {
+  position: relative; 
+  padding: 25px 0px;
+  margin: 0px 40px;
+}
+
+.employment__description {
+  display: flex;
+}
+
+.employment__date {
+  width: 30%;
+}
+
+.employment__city {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.employment__city span {
+  font-size: 12px;
+}
+
+.employment__position {
+  width: 50%;
+}
+
+.employment__position p:first-child{
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+  line-height: 1.3em;
+}
+
+.employment__position p {
+  font-size: 14px;
+  line-height: 1.3em;
+  margin-top: 15px;
+}
+
+
+.employment__section::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.education__section {
+  position: relative;
+  padding: 25px 0px;
+  margin: 0px 30px;
+}
+.education__title {
+  margin-bottom: 20px;
+}
+
+.education__description {
+  display: flex;
+  font-size: 14px;
+}
+
+.education__description_date {
+  width: 30%;
+}
+
+.education__description_info {
+  width: 60%;
+}
+
+.education__description_info h3 {
+  margin-bottom: 15px;
+}
+
+.education__description_city {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.education__section::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.skills__section {
+  padding: 25px 0px;
+  position: relative;
+  display: flex;
+  margin: 0px 30px;
+}
+
+.skills__section_title {
+  width: 30%;
+}
+
+.skills__leftSide {
+  width: 30%;
+}
+
+.skills__section::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.projects__section {
+  padding: 25px 0px;
+  position: relative;
+  margin: 0px 30px;
+}
+
+.projects__description {
+  display: flex;
+  margin-top: 20px;
+}
+
+.projects__description_date{
+  width: 30%;
+}
+
+.projects__description_position {
+  width: 60%;
+  margin-bottom: 30px;
+}
+.projects__description_position h2 {
+  margin-bottom: 20px;
+}
+
+.projects__description_position p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.projects__city {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+
+.projects__section::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+.references__section {
+  display: flex;
+  padding: 25px 0px;
+  position: relative;
+  margin: 0px 30px;
+}
+
+.references__title {
+  width: 30%;
+}
+
+.references__description {
+  margin-bottom: 35px;
+}
+
+.references__description p {
+  line-height: 1.5em;
+}
+
+.references__description h3 {
+  margin-bottom: 20px;
+}
+
+.descriptions__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.references__section::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.couses__title {
+  width: 30%;
+}
+
+.courses__section {
+  padding: 25px 0px;
+  position: relative;
+  margin: 0px 30px;
+  display: flex;
+}
+
+.courses__description_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.courses__description {
+  margin-bottom: 20px;
+}
+
+.courses__description p:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.courses__section::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+
+.hobbies__section {
+  padding: 25px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0px 30px;
+}
+
+.hobbies__title {
+  width: 30%;
+}
+
+.hobbies__section::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+
+.honors__section {
+  padding: 25px 0px;
+  display: flex;
+  position: relative;
+  margin: 0px 30px;
+}
+
+.honors__title {
+  width: 30%;
+}
+
+.honors__description p {
+  line-height: 1.5em;
+}
+
+.honors__description h4 {
+  margin-bottom: 15px;
+}
+
+.honors__section::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+
+.languages__section {
+  margin: 20px 30px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+
+.languages__items {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.languages__items_left {
+  width: 40%;
+}
+
+.languages__items_right {
+  width: 60%;
+}
+
+.languages__section::after {
+  content: '';
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
